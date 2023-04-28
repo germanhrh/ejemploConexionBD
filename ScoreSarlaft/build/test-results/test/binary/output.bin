@@ -1,0 +1,144 @@
+Request method:	POST
+ôRequest URI:	http://middlewaretest.falabella.cl/bco/co/12c/soa/soa-infra/services/banco/BCO_CO_Cliente_Admision_Evaluar-v2_0/BPELClienteAdmisionEvaluar
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+CHeaders:		Accept=application/xml, text/xml, application/xhtml+xml
+*				Content-Type=text/xml; charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+G<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+]    <ns1:ClientService xmlns:ns1="http://mdwcorp.falabella.com/common/schema/clientservice">
+$      <ns1:country>CO</ns1:country>
+)      <ns1:commerce>Banco</ns1:commerce>
+%      <ns1:channel>Web</ns1:channel>
+%      <ns1:storeId>211</ns1:storeId>
+&      <ns1:date>2015-07-09</ns1:date>
+    </ns1:ClientService>
+d    <ns1:ClientServiceFIF xmlns:ns1="http://mdwcorp.falabella.com/common/schema/clientserviceFIF"/>
+  </soap:Header>
+  <soap:Body>
+à    <ns4:clienteAdmisionEvaluarMsgReq xmlns:ns4="http://mdwcorp.falabella.com/BCO/CO/SOA/schema/Cliente/Admision/Evaluar/Req-v2017.10">
+      <ns4:cliente>
+5        <apellidoMaterno>RODRIGUEZ</apellidoMaterno>
+2        <apellidoPaterno>KATTAN</apellidoPaterno>
+6        <fechaNacimiento>1995-12-20</fechaNacimiento>
+        <genero>2</genero>
+(        <nacionalidad>13</nacionalidad>
+        <documentoIdentidad>
++          <tipoDocumento>1</tipoDocumento>
+6          <numeroDocumento>16933712</numeroDocumento>
+        </documentoIdentidad>
+        <listaRestrictiva>
+          <codigo>1</codigo>
+        </listaRestrictiva>
+1        <primerNombre>JEIMY PAOLA</primerNombre>
+        <segundoNombre/>
+"        <ns4:informacionContacto>
+          <telefono>
+8            <numeroTelefono>3112134241</numeroTelefono>
++            <tipoTelefono>3</tipoTelefono>
+          </telefono>
+          <direccion>
+/            <codigoCiudad>13001</codigoCiudad>
+          </direccion>
+          <correoElectronico>
+]            <direccionCorreoElectronico>Jeimi799104@hotmail.com</direccionCorreoElectronico>
+          </correoElectronico>
+)          <departamento>5</departamento>
+#        </ns4:informacionContacto>
+        <ns4:actividadLaboral>
+9          <descripcionActividad>3</descripcionActividad>
+9          <montoRentaLiquida>5000000</montoRentaLiquida>
+         </ns4:actividadLaboral>
+#        <ns4:informacionAdicional>
+8          <fechaExpedicion>2013-12-30</fechaExpedicion>
+2          <totalIngresos>10000000</totalIngresos>
+/          <empleadoGrupo>false</empleadoGrupo>
+$        </ns4:informacionAdicional>
+      </ns4:cliente>
+      <ns4:productos>
+        <ns4:producto>
+-          <codigoProducto>1</codigoProducto>
+        </ns4:producto>
+      </ns4:productos>
+      <ns4:productos>
+        <ns4:producto>
+-          <codigoProducto>2</codigoProducto>
+        </ns4:producto>
+      </ns4:productos>
+      <ns4:productos>
+        <ns4:producto>
+-          <codigoProducto>7</codigoProducto>
+        </ns4:producto>
+      </ns4:productos>
+      <ns4:atributoFlexible>
+8        <nombreAtributo>tipoEvaluacion</nombreAtributo>
+)        <valorAtributo>3</valorAtributo>
+      </ns4:atributoFlexible>
+(    </ns4:clienteAdmisionEvaluarMsgReq>
+  </soap:Body>
+</soap:Envelope>
+HTTP/1.1 200 OK
+%Date: Thu, 09 Feb 2023 22:19:16 GMT
+
+Server: 
+Content-Length: 3313
+X-ORACLE-DMS-RID: 0
+BX-ORACLE-DMS-ECID: 70c5aa29-39e5-4f04-8dc2-07db2deeed36-00022dd6
+SOAPAction: ""
+ Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+'Content-Type: text/xml; charset=utf-8
+Content-Language: en
+
+v<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+  <env:Header>
+L    <wsa:MessageID>urn:d3492e29-a8c7-11ed-a3f4-0050569f15e8</wsa:MessageID>
+    <wsa:ReplyTo>
+P      <wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+       <wsa:ReferenceParameters>
+ê        <instra:tracking.ecid xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">005x4j5WpEqFc5c5Tjg8yc0005n204VT1D</instra:tracking.ecid>
+É        <instra:tracking.FlowEventId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">3362430</instra:tracking.FlowEventId>
+y        <instra:tracking.FlowId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">2770055</instra:tracking.FlowId>
+™        <instra:tracking.CorrelationFlowId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">0000OOsGjAR3v1c_Th0Fyc1Zo3a300000r</instra:tracking.CorrelationFlowId>
+ñ        <instra:tracking.quiescing.SCAEntityId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">450004</instra:tracking.quiescing.SCAEntityId>
+!      </wsa:ReferenceParameters>
+    </wsa:ReplyTo>
+    <wsa:FaultTo>
+P      <wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+    </wsa:FaultTo>
+  </env:Header>
+  <env:Body>
+’    <tns:clienteAdmisionEvaluarMsgResp xmlns:ns2="http://mdwcorp.falabella.com/common/schema/mcfnf" xmlns:ns1="http://mdwcorp.falabella.com/BCO/CO/SOA/schema/Cliente/Admision/Evaluar/Req-v2017.10" xmlns:ns4="http://mdwcorp.falabella.com/schema/FIF/CORP/comun/v2015.05" xmlns:ns3="http://schemas.oracle.com/bpel/extension" xmlns:ns6="http://mdwcorp.falabella.com/schema/FIF/CORP/producto/v2015.05" xmlns:ns5="http://mdwcorp.falabella.com/schema/FIF/CORP/identificadores/v2015.05" xmlns:ns8="http://mdwcorp.falabella.com/schema/FIF/CORP/contrato/v2015.05" xmlns:ns7="http://mdwcorp.falabella.com/schema/FIF/CORP/documento/v2015.05" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns13="http://ws.bancofalabella.co/WSPreBuro" xmlns:ns9="http://mdwcorp.falabella.com/schema/FIF/CORP/seguro/v2015.05" xmlns:ns12="http://mdwcorp.falabella.com/schema/FIF/CORP/cliente/v2015.05" xmlns:ns11="http://mdwcorp.falabella.com/schema/FIF/CORP/informacionContacto/v2015.05" xmlns:ns10="http://mdwcorp.falabella.com/schema/FIF/CORP/Apertura/solicitud/v2017.01" xmlns:client="http://mdwcorp.falabella.com/BCO/CO/SOA/wsdl/Cliente/Admision/Evaluar-v2.0" xmlns:ns15="http://ws.bancofalabella.co/WSPostBuro" xmlns:ns14="http://mdwcorp.falabella.com/schema/FIF/CORP/simulacionCredito/v2018.08" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cs="http://mdwcorp.falabella.com/common/schema/clientservice" xmlns:csfif="http://mdwcorp.falabella.com/common/schema/clientserviceFIF" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://mdwcorp.falabella.com/BCO/CO/SOA/schema/Cliente/Admision/Evaluar/Resp-v2017.10">
+      <tns:estadoOperacion>
+.        <codigoOperacion>04</codigoOperacion>
+2        <glosaOperacion>CONTINUA</glosaOperacion>
+      </tns:estadoOperacion>
+      <tns:productos>
+        <tns:producto>
+-          <codigoProducto>2</codigoProducto>
+        </tns:producto>
+        <tns:montoProducto/>
+        <tns:grupoRiesgo>
+          <codigoGrupoRiesgo/>
+        </tns:grupoRiesgo>
+      </tns:productos>
+      <tns:productos>
+        <tns:producto>
+-          <codigoProducto>7</codigoProducto>
+        </tns:producto>
+      </tns:productos>
+      <tns:cliente>
+!        <esCliente>1</esCliente>
+        <tns:grupoRiesgo>
+          <codigoGrupoRiesgo/>
+        </tns:grupoRiesgo>
+      </tns:cliente>
+)    </tns:clienteAdmisionEvaluarMsgResp>
+  </env:Body>
+</env:Envelope>

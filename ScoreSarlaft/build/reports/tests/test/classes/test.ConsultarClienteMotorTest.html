@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ConsultarClienteMotorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ConsultarClienteMotorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/test.html">test</a> &gt; ConsultarClienteMotorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">18.751s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[1] 211, KATTAN, 13, 1, 16933712, 1, 5, 3, 10000000, 1, 2.5</td>
+<td class="success">registrarClienteOmnichannel(String, String, String, String, String, String, String, String, String, String, String)[1]</td>
+<td class="success">18.751s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	POST
+Request URI:	http://middlewaretest.falabella.cl/bco/co/12c/soa/soa-infra/services/banco/BCO_CO_Cliente_Admision_Evaluar-v2_0/BPELClienteAdmisionEvaluar
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=application/xml, text/xml, application/xhtml+xml
+				Content-Type=text/xml; charset=utf-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+  &lt;soap:Header&gt;
+    &lt;ns1:ClientService xmlns:ns1=&quot;http://mdwcorp.falabella.com/common/schema/clientservice&quot;&gt;
+      &lt;ns1:country&gt;CO&lt;/ns1:country&gt;
+      &lt;ns1:commerce&gt;Banco&lt;/ns1:commerce&gt;
+      &lt;ns1:channel&gt;Web&lt;/ns1:channel&gt;
+      &lt;ns1:storeId&gt;211&lt;/ns1:storeId&gt;
+      &lt;ns1:date&gt;2015-07-09&lt;/ns1:date&gt;
+    &lt;/ns1:ClientService&gt;
+    &lt;ns1:ClientServiceFIF xmlns:ns1=&quot;http://mdwcorp.falabella.com/common/schema/clientserviceFIF&quot;/&gt;
+  &lt;/soap:Header&gt;
+  &lt;soap:Body&gt;
+    &lt;ns4:clienteAdmisionEvaluarMsgReq xmlns:ns4=&quot;http://mdwcorp.falabella.com/BCO/CO/SOA/schema/Cliente/Admision/Evaluar/Req-v2017.10&quot;&gt;
+      &lt;ns4:cliente&gt;
+        &lt;apellidoMaterno&gt;RODRIGUEZ&lt;/apellidoMaterno&gt;
+        &lt;apellidoPaterno&gt;KATTAN&lt;/apellidoPaterno&gt;
+        &lt;fechaNacimiento&gt;1995-12-20&lt;/fechaNacimiento&gt;
+        &lt;genero&gt;2&lt;/genero&gt;
+        &lt;nacionalidad&gt;13&lt;/nacionalidad&gt;
+        &lt;documentoIdentidad&gt;
+          &lt;tipoDocumento&gt;1&lt;/tipoDocumento&gt;
+          &lt;numeroDocumento&gt;16933712&lt;/numeroDocumento&gt;
+        &lt;/documentoIdentidad&gt;
+        &lt;listaRestrictiva&gt;
+          &lt;codigo&gt;1&lt;/codigo&gt;
+        &lt;/listaRestrictiva&gt;
+        &lt;primerNombre&gt;JEIMY PAOLA&lt;/primerNombre&gt;
+        &lt;segundoNombre/&gt;
+        &lt;ns4:informacionContacto&gt;
+          &lt;telefono&gt;
+            &lt;numeroTelefono&gt;3112134241&lt;/numeroTelefono&gt;
+            &lt;tipoTelefono&gt;3&lt;/tipoTelefono&gt;
+          &lt;/telefono&gt;
+          &lt;direccion&gt;
+            &lt;codigoCiudad&gt;13001&lt;/codigoCiudad&gt;
+          &lt;/direccion&gt;
+          &lt;correoElectronico&gt;
+            &lt;direccionCorreoElectronico&gt;Jeimi799104@hotmail.com&lt;/direccionCorreoElectronico&gt;
+          &lt;/correoElectronico&gt;
+          &lt;departamento&gt;5&lt;/departamento&gt;
+        &lt;/ns4:informacionContacto&gt;
+        &lt;ns4:actividadLaboral&gt;
+          &lt;descripcionActividad&gt;3&lt;/descripcionActividad&gt;
+          &lt;montoRentaLiquida&gt;5000000&lt;/montoRentaLiquida&gt;
+        &lt;/ns4:actividadLaboral&gt;
+        &lt;ns4:informacionAdicional&gt;
+          &lt;fechaExpedicion&gt;2013-12-30&lt;/fechaExpedicion&gt;
+          &lt;totalIngresos&gt;10000000&lt;/totalIngresos&gt;
+          &lt;empleadoGrupo&gt;false&lt;/empleadoGrupo&gt;
+        &lt;/ns4:informacionAdicional&gt;
+      &lt;/ns4:cliente&gt;
+      &lt;ns4:productos&gt;
+        &lt;ns4:producto&gt;
+          &lt;codigoProducto&gt;1&lt;/codigoProducto&gt;
+        &lt;/ns4:producto&gt;
+      &lt;/ns4:productos&gt;
+      &lt;ns4:productos&gt;
+        &lt;ns4:producto&gt;
+          &lt;codigoProducto&gt;2&lt;/codigoProducto&gt;
+        &lt;/ns4:producto&gt;
+      &lt;/ns4:productos&gt;
+      &lt;ns4:productos&gt;
+        &lt;ns4:producto&gt;
+          &lt;codigoProducto&gt;7&lt;/codigoProducto&gt;
+        &lt;/ns4:producto&gt;
+      &lt;/ns4:productos&gt;
+      &lt;ns4:atributoFlexible&gt;
+        &lt;nombreAtributo&gt;tipoEvaluacion&lt;/nombreAtributo&gt;
+        &lt;valorAtributo&gt;3&lt;/valorAtributo&gt;
+      &lt;/ns4:atributoFlexible&gt;
+    &lt;/ns4:clienteAdmisionEvaluarMsgReq&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+HTTP/1.1 200 OK
+Date: Thu, 09 Feb 2023 22:19:16 GMT
+Server: 
+Content-Length: 3313
+X-ORACLE-DMS-RID: 0
+X-ORACLE-DMS-ECID: 70c5aa29-39e5-4f04-8dc2-07db2deeed36-00022dd6
+SOAPAction: &quot;&quot;
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/xml; charset=utf-8
+Content-Language: en
+
+&lt;env:Envelope xmlns:env=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:wsa=&quot;http://www.w3.org/2005/08/addressing&quot;&gt;
+  &lt;env:Header&gt;
+    &lt;wsa:MessageID&gt;urn:d3492e29-a8c7-11ed-a3f4-0050569f15e8&lt;/wsa:MessageID&gt;
+    &lt;wsa:ReplyTo&gt;
+      &lt;wsa:Address&gt;http://www.w3.org/2005/08/addressing/anonymous&lt;/wsa:Address&gt;
+      &lt;wsa:ReferenceParameters&gt;
+        &lt;instra:tracking.ecid xmlns:instra=&quot;http://xmlns.oracle.com/sca/tracking/1.0&quot;&gt;005x4j5WpEqFc5c5Tjg8yc0005n204VT1D&lt;/instra:tracking.ecid&gt;
+        &lt;instra:tracking.FlowEventId xmlns:instra=&quot;http://xmlns.oracle.com/sca/tracking/1.0&quot;&gt;3362430&lt;/instra:tracking.FlowEventId&gt;
+        &lt;instra:tracking.FlowId xmlns:instra=&quot;http://xmlns.oracle.com/sca/tracking/1.0&quot;&gt;2770055&lt;/instra:tracking.FlowId&gt;
+        &lt;instra:tracking.CorrelationFlowId xmlns:instra=&quot;http://xmlns.oracle.com/sca/tracking/1.0&quot;&gt;0000OOsGjAR3v1c_Th0Fyc1Zo3a300000r&lt;/instra:tracking.CorrelationFlowId&gt;
+        &lt;instra:tracking.quiescing.SCAEntityId xmlns:instra=&quot;http://xmlns.oracle.com/sca/tracking/1.0&quot;&gt;450004&lt;/instra:tracking.quiescing.SCAEntityId&gt;
+      &lt;/wsa:ReferenceParameters&gt;
+    &lt;/wsa:ReplyTo&gt;
+    &lt;wsa:FaultTo&gt;
+      &lt;wsa:Address&gt;http://www.w3.org/2005/08/addressing/anonymous&lt;/wsa:Address&gt;
+    &lt;/wsa:FaultTo&gt;
+  &lt;/env:Header&gt;
+  &lt;env:Body&gt;
+    &lt;tns:clienteAdmisionEvaluarMsgResp xmlns:ns2=&quot;http://mdwcorp.falabella.com/common/schema/mcfnf&quot; xmlns:ns1=&quot;http://mdwcorp.falabella.com/BCO/CO/SOA/schema/Cliente/Admision/Evaluar/Req-v2017.10&quot; xmlns:ns4=&quot;http://mdwcorp.falabella.com/schema/FIF/CORP/comun/v2015.05&quot; xmlns:ns3=&quot;http://schemas.oracle.com/bpel/extension&quot; xmlns:ns6=&quot;http://mdwcorp.falabella.com/schema/FIF/CORP/producto/v2015.05&quot; xmlns:ns5=&quot;http://mdwcorp.falabella.com/schema/FIF/CORP/identificadores/v2015.05&quot; xmlns:ns8=&quot;http://mdwcorp.falabella.com/schema/FIF/CORP/contrato/v2015.05&quot; xmlns:ns7=&quot;http://mdwcorp.falabella.com/schema/FIF/CORP/documento/v2015.05&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:ns13=&quot;http://ws.bancofalabella.co/WSPreBuro&quot; xmlns:ns9=&quot;http://mdwcorp.falabella.com/schema/FIF/CORP/seguro/v2015.05&quot; xmlns:ns12=&quot;http://mdwcorp.falabella.com/schema/FIF/CORP/cliente/v2015.05&quot; xmlns:ns11=&quot;http://mdwcorp.falabella.com/schema/FIF/CORP/informacionContacto/v2015.05&quot; xmlns:ns10=&quot;http://mdwcorp.falabella.com/schema/FIF/CORP/Apertura/solicitud/v2017.01&quot; xmlns:client=&quot;http://mdwcorp.falabella.com/BCO/CO/SOA/wsdl/Cliente/Admision/Evaluar-v2.0&quot; xmlns:ns15=&quot;http://ws.bancofalabella.co/WSPostBuro&quot; xmlns:ns14=&quot;http://mdwcorp.falabella.com/schema/FIF/CORP/simulacionCredito/v2018.08&quot; xmlns:env=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:cs=&quot;http://mdwcorp.falabella.com/common/schema/clientservice&quot; xmlns:csfif=&quot;http://mdwcorp.falabella.com/common/schema/clientserviceFIF&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; xmlns:tns=&quot;http://mdwcorp.falabella.com/BCO/CO/SOA/schema/Cliente/Admision/Evaluar/Resp-v2017.10&quot;&gt;
+      &lt;tns:estadoOperacion&gt;
+        &lt;codigoOperacion&gt;04&lt;/codigoOperacion&gt;
+        &lt;glosaOperacion&gt;CONTINUA&lt;/glosaOperacion&gt;
+      &lt;/tns:estadoOperacion&gt;
+      &lt;tns:productos&gt;
+        &lt;tns:producto&gt;
+          &lt;codigoProducto&gt;2&lt;/codigoProducto&gt;
+        &lt;/tns:producto&gt;
+        &lt;tns:montoProducto/&gt;
+        &lt;tns:grupoRiesgo&gt;
+          &lt;codigoGrupoRiesgo/&gt;
+        &lt;/tns:grupoRiesgo&gt;
+      &lt;/tns:productos&gt;
+      &lt;tns:productos&gt;
+        &lt;tns:producto&gt;
+          &lt;codigoProducto&gt;7&lt;/codigoProducto&gt;
+        &lt;/tns:producto&gt;
+      &lt;/tns:productos&gt;
+      &lt;tns:cliente&gt;
+        &lt;esCliente&gt;1&lt;/esCliente&gt;
+        &lt;tns:grupoRiesgo&gt;
+          &lt;codigoGrupoRiesgo/&gt;
+        &lt;/tns:grupoRiesgo&gt;
+      &lt;/tns:cliente&gt;
+    &lt;/tns:clienteAdmisionEvaluarMsgResp&gt;
+  &lt;/env:Body&gt;
+&lt;/env:Envelope&gt;
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at 9/02/2023 05:19:32 PM</p>
+</div>
+</div>
+</body>
+</html>

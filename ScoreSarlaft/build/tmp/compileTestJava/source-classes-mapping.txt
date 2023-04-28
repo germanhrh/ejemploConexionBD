@@ -1,0 +1,10 @@
+test/enums/RequestCaeFull.java
+ test.enums.RequestCaeFull
+test/utils/ManejoArchivos.java
+ test.utils.ManejoArchivos
+test/utils/ConexionBDSqlServer.java
+ test.utils.ConexionBDSqlServer
+test/utils/ConexionBDOracle.java
+ test.utils.ConexionBDOracle
+test/ConsultarClienteMotorTest.java
+ test.ConsultarClienteMotorTest
